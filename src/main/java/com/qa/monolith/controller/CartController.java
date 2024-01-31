@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/cart")
 public class CartController {
 
-	@Autowired
+	@Autowired(required = true)
 	private CartService cartService;
 
 	@GetMapping
